@@ -1,5 +1,7 @@
 import Image from "next/image"
+import Link from "next/link"
 import { ThemeSelector } from "@/components/header/theme-selector"
+import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
@@ -38,6 +40,20 @@ export default function Home() {
             </a>{" "}
             center.
           </p>
+        </div>
+        <div className="flex gap-4">
+          <Link href="/test">
+            <Button>Test</Button>
+          </Link>
+          <Link href="/test/1">
+            <Button>1</Button>
+          </Link>
+          <Link href="/test/2">
+            <Button>2</Button>
+          </Link>
+          <Link href="/test/3">
+            <Button>3</Button>
+          </Link>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
