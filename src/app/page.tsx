@@ -1,7 +1,7 @@
-import nextLogo from "@public/next.svg"
-import vercelLogo from "@public/vercel.svg"
 import Image from "next/image"
 import Link from "next/link"
+import nextLogo from "#/next.svg"
+import vercelLogo from "#/vercel.svg"
 import { ThemeSelector } from "@/components/header/theme-selector"
 import { Button } from "@/components/ui/button"
 
