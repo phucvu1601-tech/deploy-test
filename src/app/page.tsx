@@ -1,3 +1,5 @@
+import nextLogo from "@public/next.svg"
+import vercelLogo from "@public/vercel.svg"
 import Image from "next/image"
 import Link from "next/link"
 import { ThemeSelector } from "@/components/header/theme-selector"
@@ -10,7 +12,7 @@ export default function Home() {
         <div className="flex justify-between w-full">
           <Image
             className="dark:invert"
-            src="/next.svg"
+            src={nextLogo}
             alt="Next.js logo"
             width={100}
             height={20}
@@ -64,7 +66,7 @@ export default function Home() {
           >
             <Image
               className="dark:invert"
-              src="/vercel.svg"
+              src={vercelLogo}
               alt="Vercel logomark"
               width={16}
               height={16}

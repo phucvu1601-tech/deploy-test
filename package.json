@@ -6,8 +6,7 @@
     "prepare": "lefthook install",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "start:static": "serve out",
+    "start": "shx rm -rf .preview && shx mkdir -p .preview/deploy-test && shx cp -r out/* .preview/deploy-test && serve .preview -p 3000",
     "typecheck": "tsc --noEmit",
     "lint": "biome lint",
     "lint:fix": "biome lint --write",
@@ -39,6 +38,7 @@
     "@types/react-dom": "^19",
     "lefthook": "^2.1.5",
     "serve": "^14.2.6",
+    "shx": "^0.4.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
